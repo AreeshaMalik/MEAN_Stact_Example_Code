@@ -1,0 +1,91 @@
+/* body{
+    background-color: aquamarine;
+} */
+#row1{
+    align-items: center;
+}
+#row2{
+    justify-content: center;
+    display: inline-block;
+    padding: 1%;
+}
+#rc{
+    margin: 8px;
+}
+.btn{
+    justify-content: baseline;
+}
+/* FOR ADDING SHADOW TO THE CARDS */
+div.card{
+    width: 400px;
+    /* height: 500px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background-color: lavender;
+}
+div.card-body{
+    background-color: lavender;
+}
+/* 
+div.card-header{
+    background-color: rgb(185, 185, 185);
+}
+div.card-footer{
+    background-color: rgb(185, 185, 185);
+} */
+.img-fluid{
+    height: 300px; 
+    width: 400px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#article1{
+    /* background-color: rgb(113, 167, 113); */
+    font-family:'Source Sans Pro', sans-serif;
+    margin-left: 3%;
+} 
+#h11{
+    text-align: center;
+}
+#h51{
+    text-align: center;
+    margin-left: 4%;
+    margin: 0;
+}
+#logo{
+    float: middle;
+    width: 100px;
+}
+.card-text{
+    display: flex;
+    justify-content: center;
+}
+.card-text p {
+    margin: 4px;
+}
+
+i{
+    color: rgb(60, 143, 143);
+    font-size: 25px;
+}
+#anch{
+    text-decoration: inherit;
+}
+
+#sellacar{
+    float: right;
+    margin-right: 5%;
+    background-color: rgb(103, 72, 124);
+    color: white;
+}
+#trash{
+    float: right;
+}
+#edit{
+    float: right;
+}
+/* .card-header{
+    display: inline-block;
+} */

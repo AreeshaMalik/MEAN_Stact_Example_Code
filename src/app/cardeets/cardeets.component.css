@@ -1,0 +1,18 @@
+#pic1{
+    /* float: right; */
+    margin: 1%;
+    width: 30%;
+}
+#a1{
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+}
+.row{
+    justify-content: center;
+    margin: 1%;
+    /* border-radius: 2%; */
+}
+.row #seller h5{
+    float: left;
+}

@@ -1,0 +1,79 @@
+<button class="btn btn-primary" id="btn1" routerLink="">Back</button><br><br>
+<h1> Update the Vehicle Details</h1>
+<!-- <form method="get" action="/addinDB"> -->
+<article class="container" id="arti1">
+    <form id="form1">  
+        <div class="row">
+            <div class="col-sm-6">
+                <label for="name">Name:</label><br>
+                <input type="text" #name id="name" name="name" value="{{Deets[1]}}" readonly><br><br>
+            </div>
+            <div class="col-sm-6">
+                <label for="model">Model:</label><br>
+                <input type="text" #model id="model" name="model" value="{{Deets[2]}}"><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <label for="price">Price:</label><br>
+                <input type="number" #price id="price" name="price" value="{{Deets[3]}}"><br><br>
+            </div>
+            <div class="col-sm-6">
+                <label for="location">Location:</label><br>
+                <input type="text" #location id="location" name="location" value="{{Deets[5]}}"><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <label for="type">Color:</label><br>
+                <input type="text" #color id="color" name="color" value="{{Deets[10]}}"><br><br>
+            </div>
+            <div class="col-sm-6">
+                <label for="year">Year:</label><br>
+                <input type="number" #year id="year" name="year" value="{{Deets[11]}}"><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <label for="mileage">Mileage:</label><br>
+                <input type="number" #mileage id="mileage" name="mileage" value="{{Deets[1]}}"><br><br>
+            </div>
+            <div class="col-sm-6">
+                <label for="useremail">Email ID:</label><br>
+                <input type="email" #useremail id="useremail" name="useremail" value="{{Deets[6]}}"><br><br>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <label for="usercontact">Contact No:</label><br>
+                <input type="text" #usercontact id="usercontact" name="usercontact" value="{{Deets[7]}}"><br><br>
+            </div>
+            <div class="col-sm-6">
+                <label for="usercontacthrs">Contacting hours:</label><br>
+                <input type="text" #usercontacthrs id="usercontacthrs" name="usercontacthrs" value="{{Deets[8]}}"><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <label for="image">Add Image Link:</label><br>
+                <input type="text" #image id="image" name="image" value="{{Deets[0]}}"><br><br>
+            </div>
+            <div class="col-sm-6">
+                <label for="dateadded">Date Added:</label><br>
+                <input type="text" #dateadded id="dateadded" name="dateadded" value="{{Deets[12]}}"><br><br>
+            </div>
+        </div>
+
+        <label for="usercomment">Comments:</label><br>
+        <input type="text" #usercomment id="usercomment" name="usercomment" value="{{Deets[9]}}"><br><br>
+
+        <button class="btn btn-primary" (click)="UpdateVehicle(name,model,price,location,color,year,mileage,useremail,usercontact,usercontacthrs,image, dateadded,usercomment)">Update</button><br><br>        
+        <!-- name,model,color,price,dateadded,location, year, email, phone, hours, mileage, image, comments -->
+    </form><br><br>
+</article>

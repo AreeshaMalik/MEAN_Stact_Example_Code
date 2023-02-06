@@ -1,0 +1,43 @@
+<!-- <h1>pakwheels works!</h1> -->
+<div id="row1">
+    <h1 id="h11"> <img src="/assets/clutch.png" alt="logo" id="logo"> Welcome to FastWheels</h1>
+    <!-- <h5 id="h51"> Your online shop for used Vehicles</h5> -->
+</div>
+<div>
+    <button class="btn btn-block" routerLink="/addcar" id="sellacar">Sell a Car</button>
+</div>
+<br><br>
+<p><b>Note:</b> Please import the Vehicles.json in the Assignment folder to mongodb as it contains the already existing database for "Reading" the data from mongodb</p><br><br>
+<article id="article1">
+    <!-- <a href="/home" id="anch" routerLink="/cardetails"> -->
+        <div class="row" id="row2" *ngFor="let car of vehicle">
+            <div class="card text-center col-sm" id="rc">
+                <div class="card-header">
+                    <button class="btn btn-block"  (click)="DeleteVehicle(car.name)" id="trash"><i class="fa fa-trash "></i></button>
+                    <button class="btn btn-block"  (click)="getCar(car.name)" id="edit" routerLink="/updateDeets"><i class="fa fa-edit "></i></button><br><br>
+                    <h4 #title>{{car.name}}</h4>
+                </div>
+                <div class="card-body">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <!-- <img (click)="getCar(car.name)" -->
+                    <img
+                        src= {{car.image}}
+                        class="img-fluid"
+                    />
+                    </div>
+                    <br>
+                    <div class="card-text">
+                        <p> <i class="fa fa-money "></i> {{car.price}} </p>
+                        <p><i class="fa fa-calendar"></i> {{car.dateadded}}</p>
+                        <p><i class="fa fa-map-marker"></i> {{car.location}}</p>
+                        <p> <i class="fa fa-star "></i> {{car.rating}} </p>
+                    </div>
+                </div>
+                <div class="card-footer text-muted"> <a href="#" class="btn btn-lg btn-block btn-outline-primary" (click)="getCar(car.name)" routerLink="/cardetails">Open</a> </div>
+                <!-- <a href="#" class="btn btn-lg btn-block btn-outline-primary">Open</a> -->
+            </div>
+        </div>
+    <!-- </a> -->
+</article>
+
+<!-- <router-outlet></router-outlet> -->

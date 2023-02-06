@@ -1,0 +1,31 @@
+<nav>
+    <ul class="nav nav-pills justify-content-center">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">City</a>
+            <ul class="dropdown-menu">
+                <li *ngFor="let city of cities; index as indexOfelement" (click)="getCityIndex(indexOfelement)"><a class="dropdown-item" href="#" >{{city}}</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Make</a>
+            <ul class="dropdown-menu">
+                <li *ngFor="let mk of make"><a class="dropdown-item" href="#">{{mk}}</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Type</a>
+            <ul class="dropdown-menu">
+                <li *ngFor="let ty of types"><a class="dropdown-item" href="#">{{ty}}</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Rating</a>
+            <ul class="dropdown-menu">
+                <li *ngFor="let rate of ratings"><a class="dropdown-item" href="#">{{rate}}</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>

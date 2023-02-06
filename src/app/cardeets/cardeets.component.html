@@ -1,0 +1,38 @@
+<!-- <p> <img src={{Deets[0]}}> </p> -->
+<article id="a1">
+        <img src="{{Deets[0]}}" id="pic1">
+        <h1> {{Deets[1]}}</h1>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: lavender;">
+                <h2><i class="fa fa-money "></i>  </h2>
+                <h4>{{Deets[2]}}</h4>
+            </div>
+            <div class="col-sm-3" style="background-color: lavender;">
+                <h2><i class="fa fa-map-marker"></i></h2>
+                <h4>{{Deets[4]}}</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3" style="background-color: lavender;">
+                <h2><i class="fa fa-car"></i></h2>
+                <h4>{{Deets[5]}} km</h4>
+            </div>
+            <!-- <div class="col-sm-3" style="background-color: lavender;">
+                <h2><i class="fa fa-engine"></i></h2>
+                <h4>{{Deets[8]}}</h4>
+            </div> -->
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6" style="background-color: lavender" id="seller">
+                <h5> <b>Seller's Email ID: </b> {{Deets[6]}}</h5><br>
+                <h5> <b>Seller's Contact Number: </b> {{Deets[7]}}</h5><br>
+                <h5> <b>Seller's Contacting Hours: </b>{{Deets[8]}}</h5><br>
+                <h5> <b>Seller's Comments: </b> {{Deets[9]}}</h5>
+            </div>
+        </div>
+        <!-- <ng-select [(ngModel)]="selectedCar">
+            <ng-option *ngFor="let car of cars" [value]="car.id">{{car.name}}</ng-option>
+        </ng-select> -->
+</article>

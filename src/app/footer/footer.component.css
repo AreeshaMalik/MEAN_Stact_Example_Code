@@ -1,0 +1,81 @@
+/* p{
+    background-color: rgb(33, 118, 208);
+    margin: 0;
+    padding: 35px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} */
+
+/* For the page footer */
+.footer-main{
+	background: rgb(102, 119, 186);
+	padding: 35px 30px 10px 10px;
+	/* border-radius: 15px; */
+}
+
+.footer-main .footer-address,
+.footer-main .footer-media{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.footer-main .footer-address{
+	width: 60%;
+}
+
+.footer-main .footer-address i{
+	background-color: rgb(102, 119, 186);
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+
+
+.footer-main .footer-address p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin: 1px 1px 1px 1px;
+}
+
+.footer-main .footer-address p a{
+	color:  rgb(108, 72, 72);
+	text-decoration: none;;
+}
+.footer-main .footer-address{
+	margin-left: 80px;
+}
+.footer-main .footer-media{
+	margin-right: 30px;
+}
+
+.footer-main .footer-icons a{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-color:  rgb(240, 179, 137);
+	border-radius: 10px;
+	font-size: 20px;
+	color: #000000;
+	text-align: center;
+	line-height: 32px;
+    margin: 1px;
+}
+.footer-main .footer-media .footer-copyright .footer-p2{
+	color: white;
+	font-family:'Source Sans Pro', sans-serif;
+	font-size: 12px;
+	margin-top: 50px;
+}
+.footer-main .footer-media .footer-icons .footer-p1{
+	color: white;
+	font-family:'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}
